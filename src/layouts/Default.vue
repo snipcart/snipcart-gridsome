@@ -1,9 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+      <nav class="  nav">
+        <g-link class="nav__link" to="/">Home</g-link>
+        <g-link class="nav__link" to="/about/">About</g-link>
+      </nav>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
@@ -21,7 +22,7 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="scss">
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
