@@ -58,10 +58,10 @@ html, body {
 
 .nav-link {
   color: $custom-white;
-  font-family: "Jost";
+  font-family: $primary-font;
   font-style: normal;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: $normal-font-weight;
   line-height: 36px;
   margin: 34px;
   text-decoration: none;
