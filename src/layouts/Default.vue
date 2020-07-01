@@ -23,10 +23,11 @@ query {
 </static-query>
 
 <style lang="scss">
+@import '~/theme.scss';
 
 html, body {
-  background: #090B10;
-  background: linear-gradient(180deg, #090B10 0%, #090B10 35.94%, #3B3F51 100%);
+  background: $primary-color;
+  background: $background-gradient;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +57,7 @@ html, body {
 }
 
 .nav-link {
-  color: #c9d4fa;
+  color: $custom-white;
   font-family: "Jost";
   font-style: normal;
   font-size: 25px;
@@ -67,7 +68,7 @@ html, body {
 }
 
 .underlined {
-  border-bottom: 4px solid #80cbc4;
+  border-bottom: 4px solid $accent-color;
 }
 </style>
 
