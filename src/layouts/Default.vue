@@ -2,12 +2,12 @@
   <div class="layout">
     <header class="header">
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">Products</g-link>
+        <g-link class="nav-link underlined" to="/">Home</g-link>
+        <g-link class="nav-link" to="/about/">Products</g-link>
       </nav>
       <nav class="nav">
-        <g-link class="nav__link" to="/"><ProfileLogo /></g-link>
-        <g-link class="nav__link" to="/about/"><CartLogo /></g-link>
+        <g-link class="nav-link" to="/"><ProfileLogo class="hovered"/></g-link>
+        <g-link class="nav-link" to="/about/"><CartLogo class="hovered"/></g-link>
       </nav>
     </header>
     <slot/>
@@ -25,10 +25,15 @@ query {
 <style lang="scss">
 
 html, body {
+  background: #090B10;
   background: linear-gradient(180deg, #090B10 0%, #090B10 35.94%, #3B3F51 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
-  margin:0;
-  padding:0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 
@@ -47,18 +52,22 @@ html, body {
 }
 
 .nav {
-  margin: 26px 34px;
+  margin: 26px 0;
 }
 
-.nav__link {
+.nav-link {
   color: #c9d4fa;
   font-family: "Jost";
   font-style: normal;
-  font-weight: normal;
   font-size: 25px;
-  font-weight: 800;
-  margin-left: 66px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 34px;
   text-decoration: none;
+}
+
+.underlined {
+  border-bottom: 4px solid #80cbc4;
 }
 </style>
 
