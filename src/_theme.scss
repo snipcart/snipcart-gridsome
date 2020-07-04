@@ -14,6 +14,16 @@ $header-font-weight: 500;
 $normal-font-weight: 400;
 
 /* main header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+li, a {
+text-decoration: none;
+}
 
 .title {
     color: $custom-white;
