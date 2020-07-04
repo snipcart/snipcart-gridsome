@@ -1,0 +1,30 @@
+/* color variables */
+$accent-color: #80CBC4;
+$custom-white: #c9d4fa;
+$primary-color: #090B10;
+$primary-color-faded: #3B3F51;
+$background-gradient: linear-gradient(180deg, $primary-color 0%, $primary-color 35.94%, $primary-color-faded 100%);
+
+/* font variables */
+$primary-font: "Jost";
+$secondary-font: "Open Sans";
+
+/* font weights */
+$header-font-weight: 500;
+$normal-font-weight: 400;
+
+/* main header */
+
+.title {
+    color: $custom-white;
+    font-family: $primary-font;
+    font-size: 120px;
+    font-weight: $header-font-weight;
+}
+
+.subtitle {
+    color: $custom-white;
+    font-family: $secondary-font;
+    font-size: 54px;
+    font-weight: $normal-font-weight;
+}
