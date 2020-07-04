@@ -23,7 +23,7 @@ query {
 </static-query>
 
 <style lang="scss">
-@import '~/theme.scss';
+@import '~/_theme.scss';
 
 html, body {
   background: $primary-color;
