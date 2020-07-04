@@ -20,10 +20,10 @@ export default {
 </script>
 
 <style lang="scss">
-@use '~/theme.scss';
+@import '~/_theme.scss';
 
 .bubble {
-  border: 1px solid #c9d4fa;
+  border: 1px solid $custom-white;
   border-radius: 14px;
   box-sizing: border-box;
   display: flex;
@@ -33,5 +33,13 @@ export default {
   height: 438px;
   margin: auto;
   width: 93%;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 </style>
