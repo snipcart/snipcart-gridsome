@@ -43,6 +43,7 @@ export default {
   height: 0;
   border-top: 100px solid $custom-white;
   border-right: 100px solid transparent;
+  margin-right: 500px;
   margin-top: 107px;
 }
 
