@@ -60,7 +60,7 @@ html, body {
   color: $custom-white;
   font-family: $primary-font;
   font-style: normal;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: $normal-font-weight;
   line-height: 36px;
   margin: 34px;
