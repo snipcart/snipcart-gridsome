@@ -6,7 +6,7 @@
     </div>
     <div class="row">
       <div class="featured-product-layout">
-      <g-image style="margin-left: 94px;" src="~/assets/ghosts/blinky.png" />
+      <g-image class="featured-product-image-layout" src="~/assets/ghosts/blinky.png" />
       </div>
       <button class="cta-button">See our products</button>
     </div>
@@ -33,8 +33,8 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   height: 242px;
-  margin: 0 auto 95px auto;
-  width: 76%;
+  margin: 0 auto 72px auto;
+  width: 75%;
 }
 
 .bubble::after {
@@ -47,8 +47,9 @@ export default {
   margin-top: 49px;
 }
 
-.featured-product-layout {
-  flex: 1;
+
+.featured-product-image-layout {
+  margin-left: 172px;
 }
 
 .row {
