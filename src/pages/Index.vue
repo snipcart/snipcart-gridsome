@@ -5,7 +5,9 @@
       <h2 class="subtitle">With our custom-made digital ghost replicas</h2>
     </div>
     <div class="row">
-      <g-image src="~/assets/ghosts/blinky.png" />
+      <div class="featured-product-layout">
+      <g-image style="margin-left: 94px;" src="~/assets/ghosts/blinky.png" />
+      </div>
       <button class="cta-button">See our products</button>
     </div>
   </Layout>
@@ -20,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~/_theme.scss';
+@import "~/_theme.scss";
 
 .bubble {
   border: 1px solid $custom-white;
@@ -31,15 +33,37 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   height: 438px;
-  margin: auto;
+  margin: 0 auto 95px auto;
   width: 93%;
 }
 
+.bubble::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 100px solid $custom-white;
+  border-right: 100px solid transparent;
+  margin-top: 107px;
+}
+
+.featured-product-layout {
+  flex: 1;
+}
 
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+}
+
+.featured-product-layout {
+  flex: 1;
+}
+
+.row::after {
+  content: '';
+  flex: 1;
 }
 </style>
