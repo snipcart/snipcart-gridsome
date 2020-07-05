@@ -41,10 +41,10 @@ export default {
   content: "";
   width: 0;
   height: 0;
-  border-top: 100px solid $custom-white;
-  border-right: 100px solid transparent;
+  border-top: 66px solid $custom-white;
+  border-right: 66px solid transparent;
   margin-right: 500px;
-  margin-top: 60px;
+  margin-top: 49px;
 }
 
 .featured-product-layout {
