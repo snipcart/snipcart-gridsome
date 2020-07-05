@@ -28,21 +28,21 @@ text-decoration: none;
 .title {
     color: $custom-white;
     font-family: $primary-font;
-    font-size: 120px;
+    font-size: 80px;
     font-weight: $header-font-weight;
-    line-height: 173px;
+    line-height: 95px;
     /*layout*/
-    margin-top: 43px;
+    margin-top: 24px;
 }
 
 .subtitle {
     color: $custom-white;
     font-family: $secondary-font;
-    font-size: 54px;
+    font-size: 36px;
     font-weight: $normal-font-weight;
-    line-height: 74px;
+    line-height: 41px;
     /*layout*/
-    margin-top: 39px;
+    margin-top: 21px;
 }
 /* buttons */
 .cta-button {
@@ -52,12 +52,12 @@ text-decoration: none;
     border-radius: 25px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* layout */
-    height: 133px;
-    width: 466px;
+    height: 73px;
+    width: 331px;
     /* inner text style */
     color: $primary-color;
     font-family: $primary-font;
-    font-size: 52px;
+    font-size: 34px;
     font-weight: 600;
 }
 

@@ -32,9 +32,9 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  height: 438px;
+  height: 242px;
   margin: 0 auto 95px auto;
-  width: 93%;
+  width: 76%;
 }
 
 .bubble::after {
@@ -44,7 +44,7 @@ export default {
   border-top: 100px solid $custom-white;
   border-right: 100px solid transparent;
   margin-right: 500px;
-  margin-top: 107px;
+  margin-top: 60px;
 }
 
 .featured-product-layout {
