@@ -11,11 +11,15 @@
   </div>
 </template>
 <style lang="scss" scoped>
+
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 2% 4%;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2% 4%;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
 }
 </style>
 <script>
