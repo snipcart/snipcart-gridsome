@@ -11,6 +11,12 @@
   </div>
 </template>
 <style lang="scss" scoped>
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2% 4%;
+    margin: auto;
+}
 </style>
 <script>
 import Card from "~/components/Card.vue";
