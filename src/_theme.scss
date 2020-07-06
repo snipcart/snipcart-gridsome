@@ -11,7 +11,9 @@ $background-gradient: linear-gradient(
 );
 
 /* font variables */
-$primary-font: "Jost";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$primary-font: "Jost", sans-serif;
 $secondary-font: "Open Sans";
 
 /* font weights */
