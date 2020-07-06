@@ -6,7 +6,7 @@ const getProducts = () => {
         name: "Blinky",
         images: {
           big: "~/assets/ghosts/big/blinky.png",
-          small: "~/assets/ghosts/small/blinky.png",
+          small: "blinky.png",
         },
         description: {
           short: "Pack leader",
@@ -19,7 +19,7 @@ const getProducts = () => {
         name: "Inky",
         images: {
           big: "~/assets/ghosts/big/inky.png",
-          small: "~/assets/ghosts/small/inky.png",
+          small: "inky.png",
         },
         description: {
           short: "Hungover but swift",
@@ -32,7 +32,7 @@ const getProducts = () => {
         name: "Pinky",
         images: {
           big: "~/assets/ghosts/big/pinky.png",
-          small: "~/assets/ghosts/small/pinky.png",
+          small: "pinky.png",
         },
         description: {
           short: "Natural ambusher",
@@ -44,7 +44,7 @@ const getProducts = () => {
         name: "Clyde",
         images: {
           big: "~/assets/ghosts/big/clyde.png",
-          small: "~/assets/ghosts/small/clyde.png",
+          small: "clyde.png",
         },
         description: {
           short: "Got chaotic moves",

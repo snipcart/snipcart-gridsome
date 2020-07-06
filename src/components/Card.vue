@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <g-image src="~/assets/ghosts/small/blinky.png" />
+    <g-image :src="getImageUrl(this.imageUrl)" />
     <h3 class="card-title">{{this.title}}</h3>
     <p class="card-description">{{ this.description }}</p>
     <p class="card-price">{{ this.price }}</p>
@@ -57,6 +57,16 @@
 </style>
 <script>
 export default {
+  methods: {
+    getImageUrl(url) {
+      // circumvents webpack issue with calling require in html
+      const imageFolderContext = require.context(
+        "@/assets/ghosts/small",
+        false
+      );
+      return imageFolderContext("./" + url);
+    }
+  },
   props: {
     imageUrl: String,
     title: String,

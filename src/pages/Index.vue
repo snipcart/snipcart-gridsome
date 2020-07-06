@@ -6,7 +6,7 @@
     </div>
     <div class="row">
       <div class="featured-product-layout">
-      <g-image class="featured-product-image-layout" src="~/assets/ghosts/blinky.png" />
+      <g-image class="featured-product-image-layout" src="~/assets/ghosts/big/blinky.png" />
       </div>
       <button class="cta-button-layout cta-button-theme">See our products</button>
     </div>

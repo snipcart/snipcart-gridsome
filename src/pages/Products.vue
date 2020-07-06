@@ -1,17 +1,12 @@
 <template>
-  <Card
-    imageUrl="blinky.png"
-    title="Blinky"
-    description="Pack leader"
-    price="1337"
-  />
+  <Cards />
 </template>
 <script>
-import Card from "~/components/Card.vue";
+import Cards from "~/components/Cards.vue";
 
 export default {
   components: {
-    Card
+    Cards
   }
 };
 </script>
