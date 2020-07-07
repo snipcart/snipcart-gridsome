@@ -1,9 +1,9 @@
 <template>
 <Layout>
-  <div class="wrapper">
+  <div class="product-listing-wrapper">
     <h1 class="title">Our ghosts</h1>
     <p class="paragraph">Like your everlasting anxieties, our ghosts are there to keep you company through the good times and bad times alike.</p>
-    <Cards />
+    <Cards class="grid-wrapper"/>
   </div>
 </Layout>
 </template>
@@ -17,12 +17,16 @@
   font-weight: $normal-font-weight;
   font-size: 22px;
   line-height: 48px;
-  margin-top: 42px;
-  margin-bottom: 81px;
+  margin-top: 29px;
+  margin-bottom: 55px;
   width: 60%;
 }
 
-.wrapper {
+.grid-wrapper {
+    width: 67%;
+}
+
+.product-listing-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

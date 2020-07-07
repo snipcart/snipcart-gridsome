@@ -15,8 +15,8 @@
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(103, 100, 100, 0.25);
   /* layout rules */
-  height: 364px;
-  width: 270px;
+  height: 262px;
+  width: 184px;
   /* flex rules */
   display: flex;
   flex-direction: column;
@@ -27,32 +27,32 @@
 .card-title {
   color: $custom-white;
   font-family: $primary-font;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: $header-font-weight;
-  line-height: 49px;
+  line-height: 33px;
 }
 
 .card-description {
   color: $custom-white;
   font-family: $secondary-font;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: $normal-font-weight;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 .card-price {
   color: $custom-white;
   font-family: $secondary-font;
-  font-size: 26px;
+  font-size: 21px;
   font-weight: $normal-font-weight;
-  line-height: 35px;
+  line-height: 29px;
   margin-bottom: 8px;
 }
 
 .card-cta-button-layout {
-  font-size: 26px;
-  height: 45px;
-  width: 206px;
+  font-size: 21px;
+  height: 31px;
+  width: 143px;
 }
 </style>
 <script>
