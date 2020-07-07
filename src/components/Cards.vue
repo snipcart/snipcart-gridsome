@@ -33,8 +33,8 @@ export default {
 </script>
 <static-query>
 {
-    allProduct { 
-     edges {
+    allProduct(sortBy: "id", order: ASC) { 
+      edges {
       node {
         id
         name
