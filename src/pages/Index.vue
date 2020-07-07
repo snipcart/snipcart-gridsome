@@ -33,7 +33,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   height: 242px;
-  margin: 36px auto 72px auto;
+  margin: 32px auto 72px auto;
   width: 75%;
 }
 
