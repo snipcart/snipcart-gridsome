@@ -18,7 +18,7 @@
   font-size: 22px;
   line-height: 48px;
   margin-top: 29px;
-  margin-bottom: 55px;
+  margin-bottom: 42px;
   width: 60%;
 }
 

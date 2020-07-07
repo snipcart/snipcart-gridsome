@@ -44,6 +44,7 @@ export default {
         description {
           short
         }
+        price
       }
     } 
     }

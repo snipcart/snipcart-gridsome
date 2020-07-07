@@ -3,7 +3,7 @@
     <g-image :src="getImageUrl(this.imageUrl)" />
     <h3 class="card-title">{{this.title}}</h3>
     <p class="card-description">{{ this.description }}</p>
-    <p class="card-price">{{ this.price }}</p>
+    <p class="card-price">${{ this.price }}</p>
     <button class="cta-button-theme card-cta-button-layout">Add to cart</button>
   </div>
 </template>
@@ -15,7 +15,7 @@
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(103, 100, 100, 0.25);
   /* layout rules */
-  height: 262px;
+  height: 280px;
   width: 184px;
   /* flex rules */
   display: flex;
@@ -43,14 +43,14 @@
 .card-price {
   color: $custom-white;
   font-family: $secondary-font;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: $normal-font-weight;
   line-height: 29px;
   margin-bottom: 8px;
 }
 
 .card-cta-button-layout {
-  font-size: 21px;
+  font-size: 20px;
   height: 31px;
   width: 143px;
 }
@@ -71,7 +71,7 @@ export default {
     imageUrl: String,
     title: String,
     description: String,
-    price: String
+    price: Number
   }
 };
 </script>

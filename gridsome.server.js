@@ -27,6 +27,7 @@ module.exports = function(api) {
           short: element.description.short,
           long: element.description.long,
         },
+        price: element.price
       });
     });
   });
