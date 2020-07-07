@@ -3,7 +3,7 @@
     <header class="header">
       <nav class="nav">
         <g-link class="nav-link underlined" to="/">Home</g-link>
-        <g-link class="nav-link" to="/about/">Products</g-link>
+        <g-link class="nav-link" to="/products/">Products</g-link>
       </nav>
       <nav class="nav">
         <g-link class="nav-link" to="/"><ProfileLogo class="hovered"/></g-link>
