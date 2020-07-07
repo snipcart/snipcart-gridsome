@@ -2,15 +2,23 @@
   <div class="layout">
     <header class="header">
       <nav class="nav">
-        <g-link class="nav-link underlined" to="/">Home</g-link>
-        <g-link class="nav-link" to="/products/">Products</g-link>
+        <g-link class="nav-link" :class="isCurrentRoute('/')? 'underlined' : ''" to="/">Home</g-link>
+        <g-link
+          class="nav-link"
+          :class="isCurrentRoute('/products/')? 'underlined' : ''"
+          to="/products/"
+        >Products</g-link>
       </nav>
       <nav class="nav">
-        <g-link class="nav-link" to="/"><ProfileLogo class="hovered"/></g-link>
-        <g-link class="nav-link" to="/about/"><CartLogo class="hovered"/></g-link>
+        <g-link class="nav-link" to="/">
+          <ProfileLogo />
+        </g-link>
+        <g-link class="nav-link" to="/about/">
+          <CartLogo />
+        </g-link>
       </nav>
     </header>
-    <slot/>
+    <slot />
   </div>
 </template>
 
@@ -23,9 +31,10 @@ query {
 </static-query>
 
 <style lang="scss">
-@import '~/_theme.scss';
+@import "~/_theme.scss";
 
-html, body {
+html,
+body {
   background: $primary-color;
   background: $background-gradient;
   background-attachment: fixed;
@@ -67,19 +76,37 @@ html, body {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: $accent-color;
+  fill: $accent-color;
+}
+
 .underlined {
   border-bottom: 4px solid $accent-color;
 }
 </style>
 
 <script>
-import CartLogo from '~/assets/cart.svg';
-import ProfileLogo from '~/assets/profile.svg';
+import CartLogo from "~/assets/cart.svg";
+import ProfileLogo from "~/assets/profile.svg";
 
 export default {
   components: {
     CartLogo,
     ProfileLogo
   },
-}
+  data: function() {
+    return {
+      currentRoute: ""
+    };
+  },
+  methods: {
+    isCurrentRoute: function(route) {
+      return this.$route.fullPath === route;
+    }
+  },
+  created: function() {
+    this.activeTab = this.$route;
+  }
+};
 </script>
