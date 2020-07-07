@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="bubble">
-      <h1 class="title">Never sleep again</h1>
+      <h1 class="title bubble-title-layout">Never sleep again</h1>
       <h2 class="subtitle">With our custom-made digital ghost replicas</h2>
     </div>
     <div class="row">
@@ -45,6 +45,10 @@ export default {
   border-right: 66px solid transparent;
   margin-right: 500px;
   margin-top: 49px;
+}
+
+.bubble-title-layout {
+  margin-top: 28px;
 }
 
 
