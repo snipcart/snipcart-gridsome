@@ -45,5 +45,8 @@ module.exports = {
     
   },
   siteName: 'Gridsome',
-  plugins: []
+  plugins: [],
+  templates: {
+    Product: '/products/:id',
+  }
 }
