@@ -1,5 +1,5 @@
 <template>
-  <g-image style="width: 100% height: 100$" :src="getImageUrl(this.$page.product.images.big, '@/assets/ghosts/big')" />
+  <g-image :src="getImageUrl(this.$page.product.images.big)" />
 </template>
 <page-query>
 query ($id: ID!) {
