@@ -44,7 +44,7 @@ module.exports = {
     });
     
   },
-  siteName: 'Gridsome',
+  siteName: 'Ghost Store',
   plugins: [],
   templates: {
     Product: '/products/:id',
