@@ -8,7 +8,7 @@
       <div class="featured-product-layout">
       <g-image class="featured-product-image-layout" src="~/assets/ghosts/big/blinky.png" />
       </div>
-      <button class="cta-button-layout cta-button-theme">See our products</button>
+      <g-link class="cta-button-layout cta-button-theme" to="/products/">See our products</g-link>
     </div>
   </Layout>
 </template>
