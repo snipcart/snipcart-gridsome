@@ -49,6 +49,16 @@ a {
   /*layout*/
   margin-top: 28px;
 }
+
+
+.paragraph {
+  color: $custom-white;
+  font-family: $secondary-font;
+  font-weight: $normal-font-weight;
+  font-size: 22px;
+  line-height: 48px;
+  margin: 29px auto 42px;
+}
 /* buttons */
 .cta-button-theme {
   background-color: $accent-color;
@@ -58,16 +68,6 @@ a {
   color: $primary-color;
   font-family: $primary-font;
   font-weight: 600;
-}
-
-.cta-button-layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  margin-bottom: 40px;
-  height: 73px;
-  width: 331px;
 }
 
 .cta-button-theme:hover {
