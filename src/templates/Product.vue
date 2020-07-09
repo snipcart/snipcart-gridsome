@@ -5,6 +5,7 @@
         class="carousel-layout"
         :autoplay="true"
         :autoPlayHoverPause="true"
+        :autoplayTimeout="5000"
         :centerMode="true"
         :loop="true"
         :padding="200"
@@ -36,8 +37,9 @@
 }
 
 .product-layout.cta-button {
-  height: 60px;
-  width: 200px;
+  font-size: 24px;
+  height: 56px;
+  width: 180px;
 }
 
 .product-layout.paragraph {
