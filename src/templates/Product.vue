@@ -1,12 +1,21 @@
 <template>
   <Layout>
     <div class="wrapper">
-      <carousel :autoplay="true" :paginationEnabled="true" :perPage="1">
+      <carousel
+        class="carousel-layout"
+        :autoplay="true"
+        :autoPlayHoverPause="true"
+        :centerMode="true"
+        :loop="true"
+        :padding="200"
+        :paginationEnabled="true"
+        :perPage="1"
+      >
         <slide>
-          <g-image :src="getImageUrl(this.$page.product.images.big)" />
+          <img :src="getImageUrl(this.$page.product.images.big)" />
         </slide>
         <slide>
-          <g-image src="~/assets/ghosts/big/vulnerable-big.png" />
+          <img src="../assets/ghosts/big/vulnerable-big.png" />
         </slide>
       </carousel>
       <div class="product-info-layout">
@@ -20,6 +29,11 @@
 </template>
 <style lang="scss" scoped>
 @import "~/_theme.scss";
+
+.carousel-layout {
+  height: auto;
+  width: 216px;
+}
 
 .product-layout.cta-button {
   height: 60px;
