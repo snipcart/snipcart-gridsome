@@ -5,20 +5,22 @@
       <div class="product-info-layout">
         <h1 class="title">{{this.$page.product.name}}</h1>
         <p class="paragraph product-layout">{{this.$page.product.description.long}}</p>
-        <p class="price">{{this.$page.product.price}}</p>
-        <button class="cta-button-theme cta-button-product-layout">Add to cart</button>
+        <p class="price">${{this.$page.product.price}}</p>
+        <button class="cta-button-theme cta-button product-layout">Add to cart</button>
       </div>
     </div>
   </Layout>
 </template>
 <style lang="scss" scoped>
-.cta-button-product-layout {
-  height: 78px;
-  width: 257px;
+@import "~/_theme.scss";
+
+.product-layout.cta-button{
+  height: 60px;
+  width: 200px;
 }
 
 .product-layout.paragraph {
-  display: inline-block;
+  margin-left: 30px;
   width: 329px;
 }
 
@@ -26,6 +28,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  color: $custom-white;
+  font-family: $secondary-font;
+  font-size: 30px;
+  font-weight: $normal-font-weight;
+  line-height: 40px;
+  margin-bottom: 41px;
 }
 
 .wrapper {

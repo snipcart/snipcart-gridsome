@@ -8,7 +8,7 @@
       <div class="featured-product-layout">
       <g-image class="featured-product-image-layout" src="~/assets/ghosts/big/blinky-big.png" />
       </div>
-      <g-link class="cta-button-index-layout cta-button-theme" to="/products/">See our products</g-link>
+      <g-link class="cta-button index-layout cta-button-theme" to="/products/">See our products</g-link>
     </div>
   </Layout>
 </template>
@@ -52,7 +52,7 @@ export default {
 }
 
 
-.cta-button-index-layout {
+.cta-button.index-layout {
   display: flex;
   align-items: center;
   justify-content: center;
