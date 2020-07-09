@@ -13,12 +13,20 @@
         <g-link class="nav-link" to="/">
           <ProfileLogo />
         </g-link>
-        <g-link class="nav-link" to="/about/">
-          <CartLogo />
+        <g-link class="nav-link">
+            <CartLogo class="snipcart-checkout" />
+            <span class="snipcart-total-price">$0.00</span>
         </g-link>
       </nav>
     </header>
-    <slot />
+    <div>
+      <slot />
+      <div
+        id="snipcart"
+        data-api-key="MzEyY2MxODctNmM2Yi00NTVkLWFhZTAtNDRlNDdjMDY5MzFmNjM3Mjk5MzE0ODM3NTc1MzA3"
+        hidden
+      ></div>
+    </div>
   </div>
 </template>
 
