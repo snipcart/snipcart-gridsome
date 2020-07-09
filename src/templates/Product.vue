@@ -10,6 +10,9 @@
         :loop="true"
         :padding="200"
         :paginationEnabled="true"
+        paginationColor="#090b10"
+        paginationActiveColor="#c9d4fA"
+        :paginationSize="18"
         :perPage="1"
       >
         <slide>
