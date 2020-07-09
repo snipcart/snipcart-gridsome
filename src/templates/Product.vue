@@ -1,7 +1,14 @@
 <template>
   <Layout>
     <div class="wrapper">
-      <g-image :src="getImageUrl(this.$page.product.images.big)" />
+      <carousel :autoplay="true" :paginationEnabled="true" :perPage="1">
+        <slide>
+          <g-image :src="getImageUrl(this.$page.product.images.big)" />
+        </slide>
+        <slide>
+          <g-image src="~/assets/ghosts/big/vulnerable-big.png" />
+        </slide>
+      </carousel>
       <div class="product-info-layout">
         <h1 class="title">{{this.$page.product.name}}</h1>
         <p class="paragraph product-layout">{{this.$page.product.description.long}}</p>
@@ -14,7 +21,7 @@
 <style lang="scss" scoped>
 @import "~/_theme.scss";
 
-.product-layout.cta-button{
+.product-layout.cta-button {
   height: 60px;
   width: 200px;
 }
@@ -65,7 +72,13 @@ query ($id: ID!) {
 }
 </page-query>
 <script>
+import { Carousel, Slide } from "vue-carousel";
+
 export default {
+  components: {
+    Carousel,
+    Slide
+  },
   methods: {
     getImageUrl(url) {
       // circumvents webpack issue with calling require in html
