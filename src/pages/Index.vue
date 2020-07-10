@@ -6,7 +6,10 @@
     </div>
     <div class="row">
       <div class="featured-product-layout">
-      <g-image class="featured-product-image-layout" src="~/assets/ghosts/medium/blinky-medium.png" />
+        <g-image
+          class="featured-product-image-layout"
+          src="~/assets/ghosts/medium/blinky-medium.png"
+        />
       </div>
       <g-link class="cta-button index-layout cta-button-theme" to="/products/">See our products</g-link>
     </div>
@@ -22,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/_theme.scss";
+@import "~/theme/_theme.scss";
 
 .bubble {
   border: 1px solid $custom-white;
@@ -51,7 +54,6 @@ export default {
   margin-top: 28px;
 }
 
-
 .cta-button.index-layout {
   display: flex;
   align-items: center;
@@ -61,7 +63,6 @@ export default {
   height: 73px;
   width: 331px;
 }
-
 
 .featured-product-image-layout {
   margin-left: 172px;
@@ -80,7 +81,7 @@ export default {
 }
 
 .row::after {
-  content: '';
+  content: "";
   flex: 1;
 }
 </style>

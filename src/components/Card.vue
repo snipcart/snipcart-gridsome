@@ -10,7 +10,7 @@
   </g-link>
 </template>
 <style lang="scss" scoped>
-@import "~/_theme.scss";
+@import "~/theme/_theme.scss";
 
 .card {
   background-color: $primary-color;

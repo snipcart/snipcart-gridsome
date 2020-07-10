@@ -38,7 +38,7 @@ query {
 </static-query>
 
 <style lang="scss">
-@import "~/_theme.scss";
+@import "~/theme/_theme.scss";
 
 html,
 body {

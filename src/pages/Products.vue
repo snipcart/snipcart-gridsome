@@ -10,7 +10,7 @@
   </Layout>
 </template>
 <style lang="scss"scoped>
-@import "~/_theme.scss";
+@import "~/theme/_theme.scss";
 
 .cards-wrapper {
   width: 67%;
