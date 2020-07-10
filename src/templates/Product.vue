@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="wrapper">
+    <div class="product-wrapper">
       <carousel
         class="carousel-layout"
         :autoplay="true"
@@ -66,7 +66,7 @@
   margin-bottom: 41px;
 }
 
-.wrapper {
+.product-wrapper {
   grid-template-columns: 50% 50%;
   display: grid;
   align-items: center;
