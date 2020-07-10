@@ -46,3 +46,21 @@
 .cta-button-theme:hover {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 64px;
+    line-height: 76px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 8px;
+  }
+
+  .paragraph {  
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
