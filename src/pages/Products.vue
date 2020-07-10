@@ -27,6 +27,15 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .cards-wrapper {
+    width: 50%;
+  }
+  .products-layout.paragraph {
+    width: 80%;
+  }
+}
 </style>
 <script>
 import Cards from "~/components/Cards.vue";
