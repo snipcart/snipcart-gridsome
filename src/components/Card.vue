@@ -51,7 +51,7 @@
   margin-bottom: 8px;
 }
 
-.card-cta-button-layout {
+.card-button-theme.card-cta-button-layout {
   font-size: 20px;
   height: 31px;
   width: 143px;
