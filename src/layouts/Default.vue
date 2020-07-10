@@ -14,18 +14,18 @@
           <ProfileLogo />
         </g-link>
         <g-link class="nav-link">
-            <CartLogo class="snipcart-checkout" />
+          <CartLogo class="snipcart-checkout" />
         </g-link>
       </nav>
     </header>
     <div>
       <slot />
-      <div
+    </div>
+    <div
         id="snipcart"
         data-api-key="MzEyY2MxODctNmM2Yi00NTVkLWFhZTAtNDRlNDdjMDY5MzFmNjM3Mjk5MzE0ODM3NTc1MzA3"
         hidden
       ></div>
-    </div>
   </div>
 </template>
 
