@@ -49,12 +49,13 @@
 
 @media only screen and (max-width: 768px) {
   .title {
-    font-size: 64px;
-    line-height: 76px;
+    font-size: 40px;
+    line-height: 48px;
+    text-justify: center;
   }
 
   .subtitle {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 32px;
     margin-top: 8px;
   }

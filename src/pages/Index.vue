@@ -84,4 +84,39 @@ export default {
   content: "";
   flex: 1;
 }
+
+@media only screen and (max-width: 768px) {
+  .bubble {
+    border: 0;
+    border-radius: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 242px;
+    margin: 32px auto 72px auto;
+    width: 90%;
+  }
+
+  .bubble::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 66px solid $custom-white;
+    border-right: 66px solid transparent;
+  }
+
+  .featured-product-image-layout {
+    margin-left: 0;
+  }
+
+  .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+}
 </style>

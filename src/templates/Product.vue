@@ -16,10 +16,10 @@
         :perPage="1"
       >
         <slide>
-          <img :src="getImageUrl(this.$page.product.images.big)" />
+          <img class="product-img-layout" :src="getImageUrl(this.$page.product.images.big)" />
         </slide>
         <slide>
-          <img src="../assets/ghosts/big/vulnerable-big.png" />
+          <img class="product-img-layout" src="../assets/ghosts/big/vulnerable-big.png" />
         </slide>
       </carousel>
       <div class="product-info-layout">
@@ -79,14 +79,24 @@
 @media only screen and (max-width: 768px) {
 .product-grid {
   grid-template-columns: 90%;
-  margin: 10% auto;
+  margin: 2% auto;
   width: 100%; 
 }
 
+.carousel-layout {
+  height: auto;
+  width: 162px;
+}
+
+.product-img-layout {
+  width: 162px;
+}
+
 .product-layout.paragraph {
-  margin: 29px 0 2px 20%;
+  margin: 16px 0 2px 20%;
   width: 100%;
 }
+
 }
 </style>
 <page-query>
