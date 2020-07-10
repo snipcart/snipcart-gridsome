@@ -13,8 +13,8 @@
         <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
         </a>
-        <g-link class="nav-link">
-          <CartLogo class="snipcart-checkout snipcart-summary" />
+        <g-link class="nav-link snipcart-checkout ">
+          <CartLogo class="snipcart-summary" />
           <span class="snipcart-total-items"></span>
           <span class="snipcart-total-price"></span>
         </g-link>
