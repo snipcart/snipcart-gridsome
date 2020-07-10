@@ -10,9 +10,9 @@
         >Products</g-link>
       </nav>
       <nav class="nav">
-        <g-link class="nav-link" to="/">
+        <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
-        </g-link>
+        </a>
         <g-link class="nav-link">
           <CartLogo class="snipcart-checkout snipcart-summary" />
           <span class="snipcart-total-items"></span>
