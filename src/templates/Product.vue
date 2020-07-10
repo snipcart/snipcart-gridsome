@@ -78,8 +78,14 @@
 
 @media only screen and (max-width: 768px) {
 .product-grid {
-  grid-template-columns: 70%;
-  margin: 10% 25%;
+  grid-template-columns: 90%;
+  margin: 10% auto;
+  width: 100%; 
+}
+
+.product-layout.paragraph {
+  margin: 29px 0 2px 20%;
+  width: 100%;
 }
 }
 </style>
