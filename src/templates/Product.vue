@@ -32,7 +32,7 @@
   </Layout>
 </template>
 <style lang="scss" scoped>
-@import "~/theme/_theme.scss";
+@import "~/theme/_main.scss";
 
 .carousel-layout {
   height: auto;

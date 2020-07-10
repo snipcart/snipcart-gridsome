@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/theme/_theme.scss";
+@import "~/theme/_main.scss";
 
 .bubble {
   border: 1px solid $custom-white;

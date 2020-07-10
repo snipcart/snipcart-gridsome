@@ -1,36 +1,6 @@
-/* color variables */
-$accent-color: #80cbc4;
-$custom-white: #c9d4fa;
-$primary-color: #090b10;
-$primary-color-faded: #3b3f51;
-$background-gradient: linear-gradient(
-  180deg,
-  $primary-color 0%,
-  $primary-color 35.94%,
-  $primary-color-faded 100%
-);
-
-/* font variables */
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-$primary-font: "Jost", sans-serif;
-$secondary-font: "Open Sans", sans-serif;
-
-/* font weights */
-$header-font-weight: 500;
-$normal-font-weight: 400;
-
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li,
-a {
-  text-decoration: none;
-}
+@import "~/theme/reset.scss";
+@import "~/theme/_colors.scss";
+@import "~/theme/_fonts.scss";
 
 .title {
   color: $custom-white;
