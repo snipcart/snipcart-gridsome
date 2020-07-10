@@ -46,8 +46,8 @@
 }
 
 .product-layout.paragraph {
-  margin-left: 30px;
-  width: 329px;
+  margin: 29px 0 2px 30px;
+  width: 343px;
 }
 
 .product-info-layout {
