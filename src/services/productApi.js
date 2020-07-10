@@ -13,7 +13,7 @@ const getProducts = () => {
           long:
             "Natural leader. Gets a speed boost when pack pellets are cleared.",
         },
-        price: 1337
+        price: 1337,
       },
       {
         id: 1,
@@ -27,7 +27,7 @@ const getProducts = () => {
           long:
             "Had a big night yesterday, but brace yourself, he is still pretty fast.",
         },
-        price: 3141
+        price: 3141,
       },
       {
         id: 2,
@@ -40,7 +40,7 @@ const getProducts = () => {
           short: "Natural ambusher",
           long: "Natural ambusher. Will cut you off. Be careful when you turn!",
         },
-        price: 2718
+        price: 2718,
       },
       {
         id: 3,
@@ -53,7 +53,7 @@ const getProducts = () => {
           short: "Got chaotic moves",
           long: "moves = Math.random() * Math.floor(10000000)",
         },
-        price: 1235
+        price: 1235,
       },
     ],
   };

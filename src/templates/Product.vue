@@ -77,26 +77,25 @@
 }
 
 @media only screen and (max-width: 768px) {
-.product-grid {
-  grid-template-columns: 90%;
-  margin: 2% auto;
-  width: 100%; 
-}
+  .product-grid {
+    grid-template-columns: 90%;
+    margin: 2% auto;
+    width: 100%;
+  }
 
-.carousel-layout {
-  height: auto;
-  width: 162px;
-}
+  .carousel-layout {
+    height: auto;
+    width: 162px;
+  }
 
-.product-img-layout {
-  width: 162px;
-}
+  .product-img-layout {
+    width: 162px;
+  }
 
-.product-layout.paragraph {
-  margin: 16px 0 2px 20%;
-  width: 100%;
-}
-
+  .product-layout.paragraph {
+    margin: 16px 0 2px 20%;
+    width: 100%;
+  }
 }
 </style>
 <page-query>

@@ -12,7 +12,6 @@
   </div>
 </template>
 <style lang="scss" scoped>
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 184px);

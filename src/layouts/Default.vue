@@ -13,7 +13,7 @@
         <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
         </a>
-        <g-link class="nav-link snipcart-checkout ">
+        <g-link class="nav-link snipcart-checkout">
           <CartLogo class="snipcart-summary" />
           <span class="snipcart-total-items"></span>
           <span class="snipcart-total-price"></span>
@@ -90,19 +90,19 @@ body {
   fill: $accent-color;
 }
 
-
 .underlined {
   border-bottom: 4px solid $accent-color;
 }
 
 @media only screen and (max-width: 768px) {
   .nav-link {
-  margin: 17px;
+    margin: 17px;
 
-  .snipcart-total-items, .snipcart-total-price {
-    display: none
+    .snipcart-total-items,
+    .snipcart-total-price {
+      display: none;
+    }
   }
-}
 }
 </style>
 

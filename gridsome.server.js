@@ -7,7 +7,6 @@
 
 const productApi = require("./src/services/productApi.js");
 
-
 module.exports = function(api) {
   api.loadSource(async (actions) => {
     const collection = actions.addCollection("Product");
@@ -27,7 +26,7 @@ module.exports = function(api) {
           short: element.description.short,
           long: element.description.long,
         },
-        price: element.price
+        price: element.price,
       });
     });
   });
