@@ -44,6 +44,7 @@ module.exports = {
     });
     
   },
+  icon: './src/assets/favicon.png',
   siteName: 'Ghost Store',
   plugins: [],
   templates: {
