@@ -94,6 +94,16 @@ body {
 .underlined {
   border-bottom: 4px solid $accent-color;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav-link {
+  margin: 17px;
+
+  .snipcart-total-items, .snipcart-total-price {
+    display: none
+  }
+}
+}
 </style>
 
 <script>
