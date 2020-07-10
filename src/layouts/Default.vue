@@ -14,7 +14,9 @@
           <ProfileLogo />
         </g-link>
         <g-link class="nav-link">
-          <CartLogo class="snipcart-checkout" />
+          <CartLogo class="snipcart-checkout snipcart-summary" />
+          <span class="snipcart-total-items"></span>
+          <span class="snipcart-total-price"></span>
         </g-link>
       </nav>
     </header>
@@ -22,10 +24,10 @@
       <slot />
     </div>
     <div
-        id="snipcart"
-        data-api-key="MzEyY2MxODctNmM2Yi00NTVkLWFhZTAtNDRlNDdjMDY5MzFmNjM3Mjk5MzE0ODM3NTc1MzA3"
-        hidden
-      ></div>
+      id="snipcart"
+      data-api-key="MzEyY2MxODctNmM2Yi00NTVkLWFhZTAtNDRlNDdjMDY5MzFmNjM3Mjk5MzE0ODM3NTc1MzA3"
+      hidden
+    ></div>
   </div>
 </template>
 
@@ -87,6 +89,7 @@ body {
   color: $accent-color;
   fill: $accent-color;
 }
+
 
 .underlined {
   border-bottom: 4px solid $accent-color;
