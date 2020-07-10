@@ -115,9 +115,6 @@ export default {
   .row {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
   }
 }
 </style>
