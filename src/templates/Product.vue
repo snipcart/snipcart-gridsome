@@ -71,7 +71,7 @@
   display: grid;
   align-items: center;
   justify-items: center;
-  margin: auto;
+  margin: 5% auto auto auto;
   height: 40%;
   width: 60%;
 }
