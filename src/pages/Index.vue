@@ -19,7 +19,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Ghost Store"
+    title: "Main"
   }
 };
 </script>

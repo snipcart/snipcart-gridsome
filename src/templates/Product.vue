@@ -104,6 +104,9 @@ export default {
       const imageFolderContext = require.context("@/assets/ghosts/big", false);
       return imageFolderContext("./" + url);
     }
+  },
+  metaInfo: {
+    title: "Ghost"
   }
 };
 </script>
