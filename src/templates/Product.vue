@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="product-wrapper">
+    <div class="product-grid">
       <carousel
         class="carousel-layout"
         :autoplay="true"
@@ -66,7 +66,7 @@
   margin-bottom: 41px;
 }
 
-.product-wrapper {
+.product-grid {
   grid-template-columns: 50% 50%;
   display: grid;
   align-items: center;
@@ -75,6 +75,7 @@
   height: 40%;
   width: 60%;
 }
+
 </style>
 <page-query>
 query ($id: ID!) {
