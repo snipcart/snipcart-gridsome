@@ -85,38 +85,39 @@ export default {
   flex: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 989px) {
   .bubble {
     border: 0;
-    border-radius: 14px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 242px;
-    margin: 32px auto 72px auto;
+    height: 140px;
+    margin: 32px auto 58px auto;
     width: 90%;
   }
 
   .bubble::after {
     content: "";
-    width: 0;
-    height: 0;
-    border-top: 66px solid $custom-white;
-    border-right: 66px solid transparent;
+    border-top: 0;
+    border-right: 0;
+  }
+
+  .cta-button-theme.index-layout {
+    font-size: 24px;
+    margin-bottom: 32px;
+    height: 56px;
+    width: 220px;
   }
 
   .featured-product-image-layout {
+    margin-bottom: 15%;
     margin-left: 0;
+    width: 162px;
   }
 
   .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 </style>
