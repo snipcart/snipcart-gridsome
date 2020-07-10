@@ -1,4 +1,5 @@
 <template>
+  <g-link :to="this.linkToProductPage">
   <div class="card">
     <g-image :src="getImageUrl(this.imageUrl)" />
     <h3 class="card-title">{{this.title}}</h3>
@@ -6,6 +7,7 @@
     <p class="card-price">${{ this.price }}</p>
     <button class="cta-button-theme card-cta-button-layout">Add to cart</button>
   </div>
+  </g-link>
 </template>
 <style lang="scss" scoped>
 @import "~/_theme.scss";
@@ -71,7 +73,8 @@ export default {
     imageUrl: String,
     title: String,
     description: String,
-    price: Number
+    price: Number,
+    linkToProductPage: String
   }
 };
 </script>

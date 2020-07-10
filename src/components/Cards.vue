@@ -6,6 +6,7 @@
       :imageUrl="edge.node.images.small"
       :title="edge.node.name"
       :description="edge.node.description.short"
+      :linkToProductPage="`/products/`+ edge.node.id"
       :price="edge.node.price"
     />
   </div>
