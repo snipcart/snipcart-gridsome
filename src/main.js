@@ -25,6 +25,6 @@ export default function (Vue, { router, head, isClient }) {
 
   head.script.push({
     src: 'https://cdn.snipcart.com/themes/v3.0.17/default/snipcart.js',
-    body: true
+    body: false
   })
 }

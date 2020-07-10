@@ -15,7 +15,6 @@
         </g-link>
         <g-link class="nav-link">
             <CartLogo class="snipcart-checkout" />
-            <span class="snipcart-total-price">$0.00</span>
         </g-link>
       </nav>
     </header>
