@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="wrapper">
     <header class="header">
       <nav class="nav">
         <g-link class="nav-link" :class="isCurrentRoute('/')? 'underlined' : ''" to="/">Home</g-link>
@@ -54,7 +54,7 @@ body {
   line-height: 1.5;
 }
 
-.layout {
+.wrapper {
   height: 100%;
   margin: 0 auto;
   padding-left: 20px;
