@@ -5,7 +5,7 @@
       :key="edge.node.id"
       :imageUrl="edge.node.images.small"
       :title="edge.node.name"
-      :description="edge.node.description.short"
+      :description="edge.node.descriptions.short"
       :linkToProductPage="`/products/` + edge.node.id + `/`"
       :price="edge.node.price"
     />
@@ -41,7 +41,7 @@ export default {
         images {
           small
         }
-        description {
+        descriptions {
           short
         }
         price

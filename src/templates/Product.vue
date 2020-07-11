@@ -24,7 +24,7 @@
       </carousel>
       <div class="product-info-layout">
         <h1 class="title">{{this.$page.product.name}}</h1>
-        <p class="paragraph product-layout">{{this.$page.product.description.long}}</p>
+        <p class="paragraph product-layout">{{this.$page.product.descriptions.long}}</p>
         <p class="price">${{this.$page.product.price}}</p>
         <button class="cta-button-theme cta-button product-layout">Add to cart</button>
       </div>
@@ -104,7 +104,7 @@ query ($id: ID!) {
     images {
         big
     }
-    description {
+    descriptions {
         long
     }
     price

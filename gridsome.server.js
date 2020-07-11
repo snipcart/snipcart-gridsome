@@ -22,9 +22,9 @@ module.exports = function(api) {
           big: element.images.big,
           small: element.images.small,
         },
-        description: {
-          short: element.description.short,
-          long: element.description.long,
+        descriptions: {
+          short: element.descriptions.short,
+          long: element.descriptions.long,
         },
         price: element.price,
       });

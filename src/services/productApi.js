@@ -8,7 +8,7 @@ const getProducts = () => {
           big: "blinky-big.png",
           small: "blinky-small.png",
         },
-        description: {
+        descriptions: {
           short: "Pack leader",
           long:
             "Natural leader. Gets a speed boost when pack pellets are cleared.",
@@ -22,7 +22,7 @@ const getProducts = () => {
           big: "inky-big.png",
           small: "inky-small.png",
         },
-        description: {
+        descriptions: {
           short: "Hungover but swift",
           long:
             "Had a big night yesterday, but brace yourself, he is still pretty fast.",
@@ -36,7 +36,7 @@ const getProducts = () => {
           big: "pinky-big.png",
           small: "pinky-small.png",
         },
-        description: {
+        descriptions: {
           short: "Natural ambusher",
           long: "Natural ambusher. Will cut you off. Be careful when you turn!",
         },
@@ -49,7 +49,7 @@ const getProducts = () => {
           big: "clyde-big.png",
           small: "clyde-small.png",
         },
-        description: {
+        descriptions: {
           short: "Got chaotic moves",
           long: "moves = Math.random() * Math.floor(10000000)",
         },
