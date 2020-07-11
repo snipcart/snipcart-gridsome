@@ -51,9 +51,8 @@
 }
 
 .product-info-layout {
-  display: flex;
+  @include flex-align-and-justify-center;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 

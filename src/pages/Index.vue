@@ -55,9 +55,7 @@ export default {
 }
 
 .cta-button-theme.index-layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-align-and-justify-center;
   font-size: 34px;
   margin-bottom: 40px;
   height: 73px;

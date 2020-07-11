@@ -8,7 +8,7 @@
       <button class="cta-button-theme card-cta-button-layout">Add to cart</button>
     </div>
   </g-link>
-</template>
+</template> 
 <style lang="scss" scoped>
 @import "~/theme/_main.scss";
 
@@ -20,10 +20,8 @@
   height: 280px;
   width: 184px;
   /* flex rules */
-  display: flex;
+  @include flex-align-and-justify-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .card-title {
