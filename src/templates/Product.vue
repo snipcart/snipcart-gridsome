@@ -28,7 +28,15 @@
         <h1 class="title">{{this.$page.product.name}}</h1>
         <p class="paragraph product-layout">{{this.$page.product.descriptions.long}}</p>
         <p class="price">${{this.$page.product.price}}</p>
-        <button class="cta-button-theme cta-button product-layout">Add to cart</button>
+        <button
+          class="cta-button-theme cta-button product-layout snipcart-add-item"
+          :data-item-id="this.$page.product.id"
+          :data-item-description="this.$page.product.descriptions.long"
+          :data-item-image="this.$page.product.images.big"
+          :data-item-price="this.$page.product.price"
+          :data-item-name="this.$page.product.name"
+          :data-item-url="this.$page.product.url"
+        >Add to cart</button>
       </div>
     </div>
   </Layout>
@@ -102,6 +110,7 @@
 <page-query>
 query ($id: ID!) {
   product(id: $id) {
+    id
     name
     images {
         big
@@ -110,6 +119,7 @@ query ($id: ID!) {
         long
     }
     price
+    url
   }
 }
 </page-query>

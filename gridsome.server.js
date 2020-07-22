@@ -25,6 +25,7 @@ module.exports = function(api) {
           long: element.descriptions.long,
         },
         price: element.price,
+        url: element.url
       });
     });
   });
