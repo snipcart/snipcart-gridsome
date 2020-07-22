@@ -10,10 +10,8 @@ const productApi = require("./src/services/productApi.js");
 module.exports = function(api) {
   api.loadSource(async (actions) => {
     const collection = actions.addCollection("Product");
-
-    const res = productApi.getProducts();
-    const data = res.data;
-
+    const data = await productApi.getProducts();
+    
     data.forEach((element) => {
       collection.addNode({
         id: element.id,
