@@ -32,7 +32,7 @@
           class="cta-button-theme cta-button product-layout snipcart-add-item"
           :data-item-id="this.$page.product.id"
           :data-item-description="this.$page.product.descriptions.long"
-          :data-item-image="this.$page.product.images.big"
+          :data-item-image="getImageUrl(this.$page.product.images.big)"
           :data-item-price="this.$page.product.price"
           :data-item-name="this.$page.product.name"
           :data-item-url="this.$page.product.url"

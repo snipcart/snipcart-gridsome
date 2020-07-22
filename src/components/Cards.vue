@@ -3,11 +3,13 @@
     <Card
       v-for="edge in $static.allProduct.edges"
       :key="edge.node.id"
+      :id="edge.node.id"
       :imageUrl="edge.node.images.small"
       :title="edge.node.name"
       :description="edge.node.descriptions.short"
       :linkToProductPage="`/products/` + edge.node.id + `/`"
       :price="edge.node.price"
+      :url="edge.node.url"
     />
   </div>
 </template>
@@ -45,6 +47,7 @@ export default {
           short
         }
         price
+        url
       }
     } 
     }

@@ -5,7 +5,15 @@
       <h3 class="card-title">{{this.title}}</h3>
       <p class="card-description">{{ this.description }}</p>
       <p class="card-price">${{ this.price }}</p>
-      <button class="cta-button-theme card-cta-button-layout snipcart-add-item">Add to cart</button>
+      <button
+        class="cta-button-theme card-cta-button-layout snipcart-add-item"
+        :data-item-id="this.id"
+        :data-item-description="this.description"
+        :data-item-image="getImageUrl(this.imageUrl)"
+        :data-item-price="this.price"
+        :data-item-name="this.title"
+        :data-item-url="this.url"
+      >Add to cart</button>
     </div>
   </g-link>
 </template> 
@@ -68,11 +76,13 @@ export default {
     }
   },
   props: {
+    id: String,
     imageUrl: String,
     title: String,
     description: String,
     price: Number,
-    linkToProductPage: String
+    linkToProductPage: String,
+    url: String
   }
 };
 </script>
