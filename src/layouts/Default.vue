@@ -13,11 +13,11 @@
         <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
         </a>
-        <a class="nav-link snipcart-checkout">
+        <button class="nav-link snipcart-checkout checkout-button">
           <CartLogo class="snipcart-summary" />
           <span class="snipcart-total-items"></span>
           <span class="snipcart-total-price"></span>
-        </a>
+        </button>
       </nav>
     </header>
     <div>
@@ -81,7 +81,7 @@ body {
   font-size: 17px;
   font-weight: $normal-font-weight;
   line-height: 36px;
-  margin: 34px;
+  margin: 0 34px;
   text-decoration: none;
 }
 
