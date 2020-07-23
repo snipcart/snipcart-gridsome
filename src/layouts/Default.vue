@@ -9,7 +9,7 @@
           to="/products/"
         >Products</g-link>
       </nav>
-      <nav class="nav">
+      <nav class="nav snipcart-summary">
         <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
         </a>
