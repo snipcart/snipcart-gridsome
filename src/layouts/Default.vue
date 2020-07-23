@@ -13,11 +13,11 @@
         <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
         </a>
-        <g-link class="nav-link snipcart-checkout">
+        <a class="nav-link snipcart-checkout">
           <CartLogo class="snipcart-summary" />
           <span class="snipcart-total-items"></span>
           <span class="snipcart-total-price"></span>
-        </g-link>
+        </a>
       </nav>
     </header>
     <div>
