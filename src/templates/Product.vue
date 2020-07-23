@@ -1,7 +1,29 @@
 <template>
   <Layout>
     <div class="product-grid">
-      
+      <ClientOnly>
+        <carousel
+          class="carousel-layout"
+          :autoplay="true"
+          :autoPlayHoverPause="true"
+          :autoplayTimeout="5000"
+          :centerMode="true"
+          :loop="true"
+          :padding="200"
+          :paginationEnabled="true"
+          paginationColor="#090b10"
+          paginationActiveColor="#c9d4fA"
+          :paginationSize="18"
+          :perPage="1"
+        >
+          <slide>
+            <img class="product-img-layout" :src="getImageUrl(this.$page.product.images.big)" />
+          </slide>
+          <slide>
+            <img class="product-img-layout" src="../assets/ghosts/big/vulnerable-big.png" />
+          </slide>
+        </carousel>
+      </ClientOnly>
       <div class="product-info-layout">
         <h1 class="title">{{this.$page.product.name}}</h1>
         <p class="paragraph product-layout">{{this.$page.product.descriptions.long}}</p>
