@@ -13,7 +13,7 @@
         <a class="nav-link snipcart-user-profile" href="#">
           <ProfileLogo />
         </a>
-        <button class="nav-link snipcart-checkout snipcart-summary checkout-button">
+        <button class="nav-link snipcart-checkout checkout-button">
           <CartLogo />
           <span class="snipcart-total-items"></span>
           <span class="snipcart-total-price"></span>
