@@ -91,13 +91,15 @@
 }
 
 .product-img {
-    height: auto;
-    width: 216px;
-  }
+  height: auto;
+  width: 216px;
+}
 
 @media only screen and (max-width: 768px) {
   .product-grid {
     grid-template-columns: 90%;
+    align-items: center;
+    justify-items: center;
     margin: 2% auto;
     width: 100%;
   }
@@ -108,16 +110,16 @@
   }
 
   .product-layout.paragraph {
-    margin: 16px 0 2px 20%;
-    width: 90%;
+    margin: 16px 0 2px 20px;
+    width: 70%;
   }
 
   .product-img-layout {
-  height: auto;
-  width: 162px;
-}
+    height: auto;
+    width: 162px;
+  }
 
-.product-img {
+  .product-img {
     height: auto;
     width: 162px;
   }
@@ -144,22 +146,22 @@ export default {
   components: {
     Carousel: () =>
       import("vue-carousel")
-        .then(m => m.Carousel)
+        .then((m) => m.Carousel)
         .catch(),
     Slide: () =>
       import("vue-carousel")
-        .then(m => m.Slide)
-        .catch()
+        .then((m) => m.Slide)
+        .catch(),
   },
   methods: {
     getImageUrl(url) {
       // circumvents webpack issue with calling require in html
       const imageFolderContext = require.context("@/assets/ghosts/big", false);
       return imageFolderContext("./" + url);
-    }
+    },
   },
   metaInfo: {
-    title: "Ghost"
-  }
+    title: "Ghost",
+  },
 };
 </script>
