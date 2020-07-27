@@ -1,7 +1,9 @@
 <template>
   <g-link :to="this.linkToProductPage">
     <div class="card">
-      <g-image :src="getImageUrl(this.imageUrl)" />
+      <div class="card-image-wrapper">
+      <g-image class="card-image" :src="getImageUrl(this.imageUrl)" />
+      </div>
       <h3 class="card-title">{{this.title}}</h3>
       <p class="card-description">{{ this.description }}</p>
       <p class="card-price">${{ this.price }}</p>
@@ -61,6 +63,16 @@
   font-size: 20px;
   height: 31px;
   width: 143px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-image-wrapper {
+  width: 90px;
+  height: 111px;
 }
 </style>
 <script>

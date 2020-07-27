@@ -6,10 +6,12 @@
     </div>
     <div class="row">
       <div class="featured-product-layout">
-        <g-image
-          class="featured-product-image-layout"
-          src="~/assets/ghosts/medium/blinky-medium.png"
-        />
+        <div class="featured-product-wrapper">
+          <g-image
+            class="featured-product-image-layout"
+            src="~/assets/ghosts/medium/blinky-medium.png"
+          />
+        </div>
       </div>
       <g-link class="index-layout cta-button-theme" to="/products/">See our products</g-link>
     </div>
@@ -19,8 +21,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "Homepage"
-  }
+    title: "Homepage",
+  },
 };
 </script>
 
@@ -64,6 +66,8 @@ export default {
 
 .featured-product-image-layout {
   margin-left: 172px;
+  height: auto;
+  width: 100%;
 }
 
 .row {
@@ -75,7 +79,15 @@ export default {
 }
 
 .featured-product-layout {
+  display: block;
   flex: 1;
+
+}
+
+.featured-product-wrapper {
+  width: 178px;
+  height: 221px;
+
 }
 
 .row::after {

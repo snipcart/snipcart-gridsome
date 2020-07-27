@@ -16,11 +16,11 @@
           :paginationSize="18"
           :perPage="1"
         >
-          <slide>
-            <img class="product-img-layout" :src="getImageUrl(this.$page.product.images.big)" />
+          <slide class="product-img-layout">
+            <img class="product-img" :src="getImageUrl(this.$page.product.images.big)" />
           </slide>
           <slide>
-            <img class="product-img-layout" src="../assets/ghosts/big/vulnerable-big.png" />
+            <img class="product-img" src="../assets/ghosts/big/vulnerable-big.png" />
           </slide>
         </carousel>
       </ClientOnly>
@@ -85,6 +85,16 @@
   width: 60%;
 }
 
+.product-img-layout {
+  height: 263px;
+  width: 216px;
+}
+
+.product-img {
+    height: auto;
+    width: 216px;
+  }
+
 @media only screen and (max-width: 768px) {
   .product-grid {
     grid-template-columns: 90%;
@@ -97,13 +107,19 @@
     width: 162px;
   }
 
-  .product-img-layout {
-    width: 162px;
-  }
-
   .product-layout.paragraph {
     margin: 16px 0 2px 20%;
-    width: 100%;
+    width: 90%;
+  }
+
+  .product-img-layout {
+  height: auto;
+  width: 162px;
+}
+
+.product-img {
+    height: auto;
+    width: 162px;
   }
 }
 </style>
