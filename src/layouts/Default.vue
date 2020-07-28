@@ -23,11 +23,6 @@
     <div>
       <slot />
     </div>
-    <div
-      id="snipcart"
-      data-api-key="MzEyY2MxODctNmM2Yi00NTVkLWFhZTAtNDRlNDdjMDY5MzFmNjM3Mjk5MzE0ODM3NTc1MzA3"
-      hidden
-    ></div>
   </div>
 </template>
 
