@@ -92,7 +92,6 @@ body {
   .nav-link {
     margin: 17px;
 
-    .snipcart-total-items,
     .snipcart-total-price {
       display: none;
     }
