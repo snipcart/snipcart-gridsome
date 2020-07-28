@@ -15,7 +15,6 @@
         </g-link>
         <g-link class="nav-link snipcart-checkout">
           <CartLogo />
-          <span class="snipcart-total-items"></span>
           <span class="snipcart-total-price"></span>
         </g-link>
       </nav>
