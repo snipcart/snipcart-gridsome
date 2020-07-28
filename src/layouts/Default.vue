@@ -10,7 +10,7 @@
         >Products</g-link>
       </nav>
       <nav class="nav snipcart-summary">
-        <g-link class="nav-link snipcart-user-profile" href="#">
+        <g-link class="nav-link snipcart-customer-signin" href="#">
           <ProfileLogo />
         </g-link>
         <g-link class="nav-link snipcart-checkout">
