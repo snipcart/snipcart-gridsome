@@ -15,7 +15,7 @@
         </g-link>
         <g-link class="nav-link snipcart-checkout">
           <CartLogo />
-          <span class="snipcart-total-price"></span>
+          <span class="snipcart-total-price">{{this.totalPrice}}</span>
         </g-link>
       </nav>
     </header>
@@ -110,16 +110,23 @@ export default {
   },
   data: function() {
     return {
-      currentRoute: ""
+      currentRoute: "",
+      totalPrice: 0
     };
   },
   methods: {
+    getTotalPrice: function() {
+       this.totalPrice = Snipcart.store.getState().cart.total;
+    },
     isCurrentRoute: function(route) {
       return this.$route.fullPath === route;
     }
   },
   created: function() {
     this.activeTab = this.$route;
+  },
+  mounted: function() {
+    this.getTotalPrice();
   }
 };
 </script>
