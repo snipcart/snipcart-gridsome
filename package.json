@@ -10,7 +10,8 @@
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
     "normalize.css": "^8.0.1",
-    "vue-carousel": "^0.18.0"
+    "vue-carousel": "^0.18.0",
+    "vue-numerals": "^3.0.8"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",

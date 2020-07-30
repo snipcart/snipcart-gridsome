@@ -15,7 +15,7 @@
         </g-link>
         <g-link class="nav-link snipcart-checkout">
           <CartLogo />
-          <span class="snipcart-total-price">{{this.totalPrice}}</span>
+          <span class="snipcart-total-price">{{this.totalPrice | numeralFormat("$0,0.00")}}</span>
         </g-link>
       </nav>
     </header>

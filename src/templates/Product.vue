@@ -27,7 +27,7 @@
       <div class="product-info-layout">
         <h1 class="title">{{this.$page.product.name}}</h1>
         <p class="paragraph product-layout">{{this.$page.product.descriptions.long}}</p>
-        <p class="price">${{this.$page.product.price}}</p>
+        <p class="price">{{this.$page.product.price | numeralFormat("$0,0")}}</p>
         <button
           class="cta-button-theme cta-button product-layout snipcart-add-item"
           :data-item-id="this.$page.product.id"

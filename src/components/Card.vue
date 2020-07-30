@@ -6,7 +6,7 @@
       </div>
       <h3 class="card-title">{{this.title}}</h3>
       <p class="card-description">{{ this.description }}</p>
-      <p class="card-price">${{ this.price }}</p>
+      <p class="card-price">{{ this.price | numeralFormat("$0,0")}}</p>
       <button
         class="cta-button-theme card-cta-button-layout snipcart-add-item"
         :data-item-id="this.id"
