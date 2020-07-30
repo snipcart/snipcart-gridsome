@@ -111,12 +111,12 @@ export default {
   data: function() {
     return {
       currentRoute: "",
-      totalPrice: 0
+      totalPrice: ""
     };
   },
   methods: {
     getTotalPrice: function() {
-       this.totalPrice = Snipcart.store.getState().cart.total;
+       return Snipcart.store.getState().cart.total;
     },
     isCurrentRoute: function(route) {
       return this.$route.fullPath === route;
@@ -126,7 +126,7 @@ export default {
     this.activeTab = this.$route;
   },
   mounted: function() {
-    this.getTotalPrice();
+    this.totalPrice = this.getTotalPrice();
   }
 };
 </script>
