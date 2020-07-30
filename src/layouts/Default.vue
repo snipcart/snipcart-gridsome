@@ -111,7 +111,7 @@ export default {
   data: function() {
     return {
       currentRoute: "",
-      totalPrice: ""
+      totalPrice: 0
     };
   },
   methods: {
