@@ -1,5 +1,5 @@
 const {default: Axios} = require("axios");
-const baseUrl = "https://snipcart-entity-api.azurewebsites.net";
+const baseUrl = "https://snipcart-ghoststore-api.azurewebsites.net";
 
 const getProducts = async () => {
   return await Axios.get(`${baseUrl}/Product`)
