@@ -10,13 +10,13 @@
         >Products</g-link>
       </nav>
       <nav class="nav snipcart-summary">
-        <g-link class="nav-link snipcart-customer-signin" href="#">
+        <button class="nav-link snipcart-customer-signin">
           <ProfileLogo />
-        </g-link>
-        <g-link class="nav-link snipcart-checkout">
+        </button>
+        <button class="nav-link snipcart-checkout">
           <CartLogo />
           <span class="snipcart-total-price">{{this.totalPrice | formatMoney}}</span>
-        </g-link>
+        </button>
       </nav>
     </header>
     <div>
